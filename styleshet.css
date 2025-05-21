@@ -1,0 +1,96 @@
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+  
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  
+  &:after {
+    clear: both;
+  }
+}
+
+.wrapper {
+  padding: 0;
+  margin: 0;
+  -webkit-backface-visibility: hidden;
+}
+ul {
+  padding: 250px;
+  margin: 0;
+  list-style-type: none;
+  .cf;
+  
+  li {
+    float: left;
+    width: 33.33%;
+    height: 380px;
+    
+    &.twitter {
+    background-color: #2EABF3;
+    }
+    
+    &.fb {
+      background-color: #3C589D;
+    }
+    
+    &.insta {
+      background-color: #994698;
+    }
+  }
+}
+
+.icon {
+ url;
+  background-color: rgba(0,0,0,0.4);
+  margin: 100px auto;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 40px;
+  border-radius: 200px;
+  box-shadow: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  
+  &:hover {
+    box-shadow: 0px 0px 0px  4px #fff;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+
+
+
+.logo {
+    position: absolute;
+    top: 0px; /* Ajustez selon vos besoins */
+    left: 20px; /* Ajustez selon vos besoins */
+    max-width: 100px; /* Taille maximale de l'image */
+    height: auto;
+}
+.lo {
+    position: absolute;
+    top: 4px; /* Ajustez selon vos besoins */
+    left: 85%; /* Ajustez selon vos besoins */
+    max-width: 80px; /* Taille maximale de l'image */
+    height: auto;
+}
+
+.aa {
+    position: absolute;
+    top: 5px; /* Ajustez selon vos besoins */
+    left:90.5%; /* Ajustez selon vos besoins */
+    max-width: 80px; /* Taille maximale de l'image */
+    height: auto;
+}

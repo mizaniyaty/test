@@ -1,0 +1,152 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* background-image: url('22.png'); /* Utilisez votre image comme fond */
+    background-size: cover;
+    background-position: center;  
+    height: 100vh; /* Hauteur de la fenêtre */
+    position: relative; /* Position relative pour le positionnement des éléments internes */
+}
+
+.header {
+    align-items: center;
+    justify-content: flex-start; /* Aligne le contenu à gauche */
+    padding: 0px 470px;
+    background-size: cover;
+    background-position: center;  
+    height: 30vh; /* Hauteur de la fenêtre */
+    position: relative; /* Position relative pour le positionnement des éléments internes */
+
+}
+
+.logo {
+    position: absolute;
+    top: 0px; /* Ajustez selon vos besoins */
+    left: 20px; /* Ajustez selon vos besoins */
+    max-width: 100px; /* Taille maximale de l'image */
+    height: auto;
+    margin: 10px;
+}
+.lo {
+    position: absolute;
+    top: 4px; /* Ajustez selon vos besoins */
+    left: 85%; /* Ajustez selon vos besoins */
+    max-width: 80px; /* Taille maximale de l'image */
+    height: auto;
+}
+
+.aa {
+    position: absolute;
+    top: 5px; /* Ajustez selon vos besoins */
+    left:90.5%; /* Ajustez selon vos besoins */
+    max-width: 80px; /* Taille maximale de l'image */
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+
+    background-color: #7bed9f;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100%;
+    font-style: normal;
+    display: block;
+    padding:17px 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, border 0.3s;
+   
+}
+
+nav ul li a:hover {
+    background-color: #ff3838;
+    border: 7px solid #ff4d4d;
+}
+
+
+.hi{
+    position: absolute;
+    right: 20px;
+    margin-top: 50px;
+}
+
+
+  .container {
+    text-align: left;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #7bed9f;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    margin-top: 90px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover {
+    color: #cf1b1b;
+}
+
+.content {
+    text-align: center;
+    text-align: left;
+    position: absolute; /* Positionne ce bloc au centre de la page */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left:0px; /* Make space for the sidebar */
+    padding: 50px;
+
+}
+
+.content .text {
+
+    text-align: left;
+    margin-right: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 0px;
+    font-style: normal;
+
+
+}
+
+
+
+
+.pdf-box:hover {
+    transform: scale(1.05);
+}
+

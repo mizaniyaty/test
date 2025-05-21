@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styleloi.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIZZANIYATY HAQQI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+     body {
+            
+        }
+        h1 {
+            color: #333;
+        }
+        .pdf-container {
+            display: flex; /* Affiche les éléments en ligne */
+            justify-content: space-evenly; /* Espace entre les éléments */
+            flex-wrap: wrap; /* Permet aux éléments de se réorganiser si nécessaire */
+            gap: 20px; /* Espace entre les fichiers */
+        }
+        .pdf-box {
+            
+            width: 30%; /* Chaque boîte prendra 30% de la largeur disponible */
+            background-color: #7bed9f;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 2px solid #d61b1b; /* Bordure autour du rectangle */
+            box-sizing: border-box;
+        }
+        .pdf-box img {
+            width: 100%; /* Largeur de l'image */
+            height: 200px; /* Hauteur fixe */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .pdf-box .pdf-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #333;
+        }
+        .pdf-box a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #f50202;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .pdf-box a:hover {
+            background-color: #9d0b0b;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img id="image" src="logo2.jpg" alt="Logo" class="logo">
+        </a>
+        <script>
+            let images = ["logo2.jpg", "logo1.jpg"]; // Liste des images
+            let index = 0;
+
+            setInterval(function() {
+                index = (index + 1) % images.length; // Incrémente l'index pour passer à l'image suivante
+                document.getElementById('image').src = images[index]; // Change l'image
+            }, 5000); // Change l'image toutes les 5 secondes
+        </script>
+        <a href="heart.html">
+            <img href="heart.html" src="person.svg" alt="Lo" class="lo">
+        </a>
+        <a href="etoile.html">
+            <img href="etoile.html" src="star.svg" alt="aa" class="aa">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="contact.html">Contactez-nous</a></li>
+                <li><a href="loi.html">lois et Règlement</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="pdf-container">
+        <div class="pdf-box">
+            <!-- Image associée au premier PDF -->
+            <img src="d1.png" >
+            <div class="pdf-name"> Loi de l'association version francais</div>
+            <a href="d1.docx" target="_blank"> Ouvrir le PDF</a>
+        </div>
+        <div class="pdf-box">
+            <!-- Image associée au deuxième PDF -->
+            <img src="d2.png" >
+            <div class="pdf-name"> Loi de l'association version arabe</div>
+            <a href="fichier2.pdf" target="_blank">Ouvrir le PDF</a>
+        </div>
+        <div class="pdf-box">
+            <!-- Image associée au troisième PDF -->
+            <img src="d31.png">
+            <div class="pdf-name">Autre...lois et Règlement</div>
+            <a href="fichier3.pdf" target="_blank">Ouvrir le PDF 3</a>
+        </div>
+   
+    </div>
+
+</body>
+</html>
